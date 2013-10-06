@@ -76,8 +76,15 @@ abstract class AbstractReflectionFixture extends AbstractFixture
             $obj->$setterName($value);
         }
 
+        $obj = $this->modifyObject($obj);
+
         $this->manager->persist($obj);
 
+        return $obj;
+    }
+
+    protected function modifyObject($obj)
+    {
         return $obj;
     }
 
