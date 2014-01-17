@@ -12,19 +12,13 @@
             "homepage": "https://lcstudios.de/robin"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
         "symfony/framework-bundle": "~2.1",
-        "doctrine/doctrine-fixtures-bundle": "dev-master"
+        "doctrine/doctrine-fixtures-bundle": "~2.2"
     },
     "autoload": {
         "psr-0": { "LCStudios\\ReflectionFixtureBundle": "" }
     },
-    "target-dir": "LCStudios/ReflectionFixtureBundle",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
-    }
+    "target-dir": "LCStudios/ReflectionFixtureBundle"
 }
